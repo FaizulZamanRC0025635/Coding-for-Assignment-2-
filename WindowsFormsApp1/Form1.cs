@@ -29,7 +29,18 @@ namespace WindowsFormsApp1
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            openFileDialog1.FileName = "";
+            openFileDialog1.Filter = "csv Files|".csv";
+            DialogResult = openFileDialog1.ShowDialog()
+            if (result == DialogResult.OK)
+            {
+                try
+                {
+                    using (StreamReader sr = new StreamReader(openFileDialog1.FileName))
+                       
 
+                }
+            }
      
 
         }
