@@ -39,7 +39,7 @@ namespace WindowsFormsApp1
                     using (StreamReader sr = new StreamReader(openFileDialog1.FileName))
                     (
                        String line = sr.Readline();
-                       while
+                       while (!Sr.End of stream)
                     )
 
                 }
