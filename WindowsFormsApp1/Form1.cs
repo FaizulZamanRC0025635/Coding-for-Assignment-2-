@@ -51,7 +51,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        //
+        // This is used to open and gain access to the file 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
