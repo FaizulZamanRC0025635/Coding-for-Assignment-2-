@@ -30,6 +30,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        // The calculating velocity method is used to calculate velocity
         private void calculateVelocity()
         {
             for (int i = 1; i < table.Count; i++)
@@ -39,7 +40,7 @@ namespace WindowsFormsApp1
                 table[i].velocity = dQ / dt;
             }
         }
-
+        // The calculating accelearation method is sued to calculate acceleration
         private void calculateAcceleration()
         {
             for (int i = 2; i < table.Count; i++)
@@ -50,7 +51,7 @@ namespace WindowsFormsApp1
             }
         }
 
-
+        //
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
@@ -95,6 +96,7 @@ namespace WindowsFormsApp1
 
         }
 
+        // This is used to draw the graph for velocity
         private void velocityToolStripMenuItem_Click(object sender, EventArgs e)
         {
             chart1.Series.Clear();
@@ -119,6 +121,7 @@ namespace WindowsFormsApp1
 
         }
 
+        // This is used to draw the graph for altitude
         private void altitudeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             chart1.Series.Clear();
@@ -144,6 +147,7 @@ namespace WindowsFormsApp1
 
         }
 
+        // This is used to draw the graph for acceleration
         private void accelerationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             chart1.Series.Clear();
@@ -169,6 +173,7 @@ namespace WindowsFormsApp1
 
         }
 
+        // This allows me to save the file as a PNG file
         private void savePNGToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.FileName = "";
@@ -188,6 +193,7 @@ namespace WindowsFormsApp1
 
         }
 
+        // This allows me to save it as a CSV file
         private void saveCSVToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.FileName = "";
